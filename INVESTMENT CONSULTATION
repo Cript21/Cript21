@@ -1,0 +1,622 @@
+Is there a “limit to growth” as exposed in the​ Meadows Report? Our global system works on “growth” of production to generate employment and income, which takes several forms: wages, incomes for enterpreneurs and stock holders, capital gains, rent and interest income, which themselves finance State income (taxes!) and other institutional incomes. Private and public pension funds run on “total returns” from assets, themselves tied closely or loosely in the long run to the underlying “cake” that we all “eat”, which is also called Gross Domestic Product: the total economic value generated per year.
+
+Bitcoin investment trust is an alternative way to own Bitcoin that’s getting popularity now. Bitcoin trust is a bitcoin investment vehicle instead of the ETF that accommodates Bitcoin investment with holdings’ basics. It works differently from buying Bitcoin from exchanges or bitcoin sellers. It involves holding it in your digital wallets, but Bitcoin trust doesn’t even require you to purchase and store Bitcoin directly.
+As it has grown in popularity and interest among Bitcoin investors, the question has arisen whether Bitcoin investment trust is safe. … 27835437914
+Deep Learning for Forex Trading
+Many research papers cover the prediction of financial time series but only a small number of them speak about the application in a real trading strategy. Most of the time the research only gives the performance metrics of the model (accuracy, RMSE, …) but without trying to transform it into a profitable strategy.
+
+When we talk about financial time series, we talk about stochastic processes, meaning it deals with a lot of randomness. For this reason, it’s unrealistic to expect getting an accuracy similar to the ones obtained in many other applications of Deep Learning. So, don’t expect getting a…
+
+After a month of extreme fear in June 2021, confidence seems to be returning to the Bitcoin market. Several charts clearly indicate that the big opportunity for the coming months with Bitcoin is now. Those who want to take full advantage of the Bitcoin revolution have a tremendous opportunity to accumulate more now.
+
+I detailed the charts that support this idea in a recent article: “The Big Opportunity With Bitcoin for the Coming Months Is Now — 8 Charts Confirming This Idea”.
+
+Among the responses to that article, one person asked me if I was already in the Bitcoin world in 2018 when a Bear Market took over the market for many months. This person went further and asked me what I was saying at the time in my articles about Bitcoin:
+
+Bitcoin’s Bear Market in 2018 was an opportunity to accumulate more BTC
+
+So I was there at the end of 2017 when the euphoria took over the Bitcoin market. I was still there when the speculative bubble that had formed at the time burst. This explosion then leading to a Bear Market that lasted throughout 2018 and part of 2019.
+
+So I witnessed the fall, which seemed irretrievable to some, of the price of Bitcoin from $20K to just $3.2K.
+
+Throughout this fall in the price of Bitcoin, I was already repeating what I say today in many of my articles:
+
+Stay Strong, Stay a Bitcoin HODLer.
+
+Great investment successes are always built in these moments. It’s when everyone is panicking and no one is interested in an asset anymore that you have to get greedy.
+
+As long as the fundamental freedoms of Bitcoin are preserved, demand will continue to grow in the future
+
+With Bitcoin, you need to ask yourself the right questions. The first is whether the freedoms that Bitcoin offers you are still preserved. I’m talking about the three major freedoms that Bitcoin gives you:
+
+Freedom to send BTC.
+
+Freedom to receive BTC.
+
+Freedom to HODL BTC.
+
+As long as these three freedoms are preserved, the demand for Bitcoin will continue to grow. Why? Simply because they allow people to live their lives on their own terms. Bitcoin is about freedom.
+
+People who focus only on the short-term price of Bitcoin will panic when its price drops by more than 50%. Those who take a long-term view of Bitcoin will see an incredible opportunity to accumulate more. And that’s what’s at stake for the next few years with Bitcoin.
+
+Bitcoin is an accumulation game for the years to come.
+
+“Stay Strong, Stay a Bitcoin HODLer” is my mantra
+
+The more BTC you can accumulate, the better your future will be. In fact, when the price of Bitcoin falls sharply as it did in May 2021 while its fundamentals remain intact, it is an opportunity. Elon Musk’s manipulation of the Bitcoin price, as well as the FUD coming out of China, is what caused the Bitcoin price to crash.
+
+All of this will be history in a few months, if not weeks.
+
+That is my belief. The person who wrote this comment might say to me: what will you do if you are wrong?
+
+In that case, Bitcoin would go back into a Bear Market. This is not my preferred scenario, but anything is possible in life. Well if that happens, I will do as I did in 2018. I will apply the following principle over and over again:
+
+Stay Strong, Stay a Bitcoin HODLer.
+
+You have no interest in exchanging your Bitcoin for a weak currency like the US dollar
+
+Bitcoin is a savings technology that allows me to protect the fruits of my labor from the ravages of monetary inflation in a censorship-resistant way. It is the best option for me to protect my wealth.
+
+So I have no interest in taking some profits by trading my Bitcoin for a weak currency like the U.S. dollar. Rather than thinking of selling my Bitcoin, I will accumulate more.
+
+I plan to take every opportunity to accumulate more in the months and years ahead. I can do this because I have complete confidence in the success of the Bitcoin revolution. This confidence is complete because I really understand Bitcoin.
+
+Final Thoughts
+
+Those who fear the volatility of the Bitcoin price in the short term are people who still haven’t understood the incredible power of the Bitcoin revolution.
+
+This is not a problem. They will take longer to embrace this revolution. De facto, their reward will be less than those who have supported Bitcoin since the early days.
+
+Then there is no need to say that those who are profiting from Bitcoin have been lucky. With Bitcoin, there is no such thing as luck. Everyone gets what they deserve. It’s up to you to decide what you want to do with the Bitcoin revolution.
+
+Many research papers cover the prediction of financial time series but only a small number of them speak about the application in a real trading strategy. Most of the time the research only gives the performance metrics of the model (accuracy, RMSE, …) but without trying to transform it into a profitable strategy.
+
+When we talk about financial time series, we talk about stochastic processes, meaning it deals with a lot of randomness. For this reason, it’s unrealistic to expect getting an accuracy similar to the ones obtained in many other applications of Deep Learning. So, don’t expect getting a 80% accuracy when predicting the market to go up or down for a given time horizon. Predicting Financial Time Series is known to be one of the hardest task in Machine Learning. The purpose is instead of trying to find a model that can give you a small edge when compared to a pure random guess, or to a pure Buy and Hold strategy when we speak about the stock market.
+
+There is also a lot of things to take care regarding the data processing when applying Machine Learning to Financial Time Series. If you are a beginner in this field of research or if you get good metrics from your model but poor real trading results, you can read our paper covering this subject, Financial Time Series Data Processing for Machine Learning, it can help you to understand what’s going wrong.
+
+For years now, and in collaboration with two French engineer schools, CentralSupelec and Polytechnique, Lusis AI Department is working on Financial Time Series predictions in the perspective of applicable trading strategies.
+
+In this article and the future ones, the reader will find some methods and results than can help him a lot with his own research. But because much more than in any other domain, an AI Based Trading Strategy that works can directly be transformed into money, so we will obiously never disclose the most important things enabling to reproduce our models. If you find a reproducible model with very good metrics anywhere in a paper, take care and do your own research and backtest before investing with it.
+
+Predicting GBPUSD intraday trend
+
+In this article we illustrate the application of Deep Learning to build a trading strategy.
+
+We first create and evaluate a model predicting intraday trends on GBPUSD. Then we backtest a strategy solely based on the model predictions before to make it run in real time.
+
+Dataset : GBPUSD one hour OHLC data between 04/11/2011 and 01/30/2018, so it represents 41,401 one hour OHLC bars, for about 7 years of data
+
+Training Set : 2011–2014
+
+Validation Set : 2015
+
+Test Set : 2016–2018
+
+Label : Up/Down closing price N bars later, our predictor is a classifier
+
+It’s amazing how much effort critics expend on ways in which Bitcoin could not work. Few people ask about the vulnerabilities of USD for instance, which has a far greater impact globally yet in order to FUD Bitcoin, the same “concerns” are brought up again and again as if they were novel to “warn” people away from Bitcoin. The latest salvo against Bitcoin is the idea of the empty block attack, something made popular by​ ​
+
+in his debate with Pomp.
+
+To be clear, I already wrote about mining centralization scenarios, which covers the empty block attack 3 years ago…
+
+The Moral Case for Bitcoin
+
+The Bitcoin Times, Ed 3
+
+
+
+There’s no morality in fiat.
+
+One of the most important parts of the Bitcoin journey is learning to talk about Bitcoin in a way that connects with people. There have been a lot of approaches.
+
+There’s the investment case for bitcoin, the self-sovereignty case for bitcoin and even the societal case for bitcoin. What there hasn’t been is the moral case for bitcoin. The moral case for anything is a different beast than the others because we’re not appealing to self-interest, we’re appealing to something that’s deeper in the human soul.
+
+For this reason, a moral argument resonates deeper and…
+
+Open in app
+
+
+
+
+
+Debunking the Empty Block Attack
+
+Jimmy Song
+
+Jimmy Song
+
+
+
+Mar 29·9 min read
+
+
+
+
+
+
+
+
+
+It’s amazing how much effort critics expend on ways in which Bitcoin could not work. Few people ask about the vulnerabilities of USD for instance, which has a far greater impact globally yet in order to FUD Bitcoin, the same “concerns” are brought up again and again as if they were novel to “warn” people away from Bitcoin. The latest salvo against Bitcoin is the idea of the empty block attack, something made popular by​
+
+Michael
+
+​ in his debate with Pomp.
+
+
+
+To be clear, I already wrote about mining centralization scenarios, which covers the empty block attack 3 years ago. But as we’ve seen with Bitcoin critics, their forte seems to be in bringing up concerns that were addressed long ago as if they’re new during each bull cycle. Honestly, I’m pretty sick of the FUD and having to explain the same things over and over again, but given that there’s a good number of new people coming into the space, I’m going to refute the specific attack in this article.
+
+What is the Empty Block Attack?
+
+The empty block attack is one where a majority of mining power would be directed at mining only empty blocks and rejecting non-empty blocks. These miners would essentially execute a soft-fork where all non-empty blocks would be rejected. Given that they have a majority of hashing power on the network, so the thinking goes, they will eventually get the longer chain even if other miners were to mine non-empty blocks. If only empty blocks are being mined, all activity on the network would stop and so, the thinking goes, Bitcoin would be killed.
+
+Who would execute such an attack? The usual villain in this scenario is China, who apparently has a majority of hashing power within its borders. The thinking goes that they would seize control of the hash power one way or the other and execute this attack on the network.
+
+
+
+This is not a bad first-order approximation of what would happen, but the problem with this scenario is that the Bitcoin critics don’t believe that there would be any resistance whatsoever. This is about as naive as thinking that a nuclear strike on a populated city wouldn’t provoke some sort of response.
+
+So let’s take a look at some of the countermeasures that the Bitcoin network can perform. There are two scenarios for an empty block attack: direct and indirect. The direct one is acquiring 51% of the mining equipment and executing the attack. The indirect one is compelling pools to only mine empty blocks. Let’s take the more realistic second scenario first.
+
+Pool-based Majority is a Non-starter
+
+Most mining power is gathered into pools and each pool operator competes with other pool operators for the business of mining equipment owners. If China were to somehow be able to take control of pools and execute this attack, most mining equipment owners would simply leave. Why? Because the pool mining empty blocks will generate less revenue than a pool mining normal blocks. Currently, the block subsidy is 6.25 BTC and fees are around 0.75 BTC. Using a pool outside of China (such as Slushpool) would give them 11% more revenue. In other words, they would have to give up 11% of revenue in a thin-margin business, a non-starter.
+
+The pools would thus have to subsidize the mining equipment owners by at least 11%. But if they are being subsidized, equipment owners will know that they’re part of an empty-block attack, in which case there will be a significant premium for their loyalty. The pool would have to give them much more than the 11% revenue they’re losing.
+
+
+
+The pool also has no easy way to compensate these miners with BTC with empty blocks, which don’t allow transfer of BTC. The pool, by executing an empty block attack, is essentially hoping to obsolete the very businesses that these mining equipment owners created. The premium given to these mining equipment owners would have to cover not just the opportunity cost of mining in an empty block pool but the value that they place on their entire businesses. In other words, it’s not going to be cheap. They’re going to have to spend at least the amount of money that covers the value of all these businesses and probably significantly more than that.
+
+Direct Mining Equipment Acquisition is Really Hard
+
+The other scenario is direct acquisition of the mining equipment. This, again, is not a cheap scenario. There are two ways a government can get their hands on mining equipment, either seizing it or producing it themselves.
+
+How would a government go about seizing the mining equipment? One major feature of mining equipment is that they are portable and it’s well known that this equipment is moved in bulk all the time to chase the cheapest sources of electricity. How would the government even know where they are? They would have to require registration and movement of the mining equipment and require a vast bureaucracy just to keep track.
+
+
+
+In addition, there’s the problem of seizing such valuable property from their owners without arousing suspicion. This is very difficult as the mining equipment is extremely valuable, especially in an empty vs. normal block war. As we’ll see, equipment that’s mining normal blocks in the minority will get a significant amount of fees. Thus, in such a war, every mining equipment owner will want to sell their equipment abroad and smuggle it out as quickly as possible.
+
+Thus, the operation can’t just be a slow and steady seizure of one mining facility after another. They all have to be seized at once and with significant force. Anyone that has even a hint of what’s coming will get their equipment out of the country as quickly as possible. Even something like a prelude, like having to register mining equipment with the government would likely cause a mass exodus of all but the most unprofitable pieces of mining equipment. Thus, this operation requires a lot of man-power, lots of secrecy and lots of coordination, probably requiring the military and a lot of violence.
+
+How about buying the equipment from the market? A huge government buyer is going to add a significant demand to the mining equipment market. As prices go up, so do profit margins bringing a lot more manufacturers into the market. Such a government would thus have to outrun the natural market dynamics of supply increasing with demand and gather not just the majority of world-wide mining equipment at one particular moment in time, but forever going forward. If at any time they stop having the majority of the hash power for any significant amount of time, their empty block attack is lost.
+
+
+
+How about manufacturing the equipment themselves? Manufacturing it themselves would be similarly hard as they would have to compete along the entire supply chain of parts that are needed to manufacture such equipment. They would increase the profit of these parts, making it more profitable and creating more supply, ultimately creating more mining equipment manufacturers that will compete with them. In other words, they would have to outrun the free market process for equipment manufacture and that will not only require a lot of money, but a lot of technical and business competence which governments typically don’t have.
+
+What happens if a Country has Majority Hash Rate
+
+But let’s leave aside this concern and give the Bitcoin critics the advantage here. Suppose a country somehow manages to get 51% of the mining hash power, whether through manufacturing it themselves,buying or seizing it on the market. What would happen then?
+
+
+
+They would start the empty block attack to halt the entire network. What would the rest of the network do? They would likely be upset that only empty blocks are being mined and would see normal blocks get wiped out. The rest of the network would rightfully see the empty blocks as an attack on the network, identify it as such and not accept such blocks.
+
+This is very easy on any full node implementation. There’s an RPC command called “invalidateblock” which essentially says “do not accept this block or any block that builds on top of it”. The entire branch that the nation-state attacker worked so hard to create can be invalidated by any node with that single command. This would have to be done by each individual node, but given that there’s literally no transactions being processed on the empty block chain, node operators would be incentivized to run it.
+
+For the minority of the hash power that’s getting their blocks overridden by the empty blocks, they would clearly want to run “invalidateblock” as otherwise they would make no money. From a game-theory perspective, a large portion of the network is economically incentivized to enter a new minority consensus. In other words, a decentralized subset will form against the clearly centralized majority because of economic incentives.
+
+Empty vs. Normal Chain War
+
+At this point, Bitcoin would fork: one empty blockchain and one normal blockchain. The normal one would have transactions but less hashing power, so would run slower. The empty one would have no transactions but more hashing power so would run faster. They would be separate chains and every economically significant node would follow the normal blockchain as it’s the only one that’s actually processing transactions.
+
+Not only that, but because of the backlog of transactions due to reduced hashing power, fees would go up making mining on this chain significantly more profitable. As a result, there will be economic incentive for more hashing power to come on the minority side. This may include new equipment being manufactured, old equipment coming online and even defections (stolen or smuggled) from the majority side.
+
+
+
+In the meantime, the majority side would have to keep a majority through the new equipment manufacture, old equipment usage and defections on the minority side to continue their attack. If at any point the normal blockchain has more proof-of-work than the empty one, the empty blockchain would be wiped out and the attack essentially thwarted.
+
+But even if the normal blockchain has less hashing power, it will chug along happily while the empty blockchain will continue adding blocks uselessly. No one will be able to buy or sell on the empty chain as there’s no way to send to or receive from any exchange. Such a chain will not affect what everyone else will consider the real Bitcoin and few are going to pay it much attention.
+
+Conclusion
+
+Given all of these realities, a nation-state would have to weigh out these scenarios and determine if it’s worth it. Even with unlimited money, which they don’t have, and majority control of new mining equipment manufacturing world-wide, which is highly unlikely, the probability of failure, that of a decentralized minority forming, is really high. Make no mistake, a failure of this magnitude would be a massive black eye to their reputation and prestige at home and abroad. This is the sort of humiliation that government officials avoid at all costs.
+
+
+
+That said, I personally would welcome such an attack as I think it would be great for Bitcoin. Not only would we test ourselves against a nation-state enemy, but an authoritarian government that does this is likely to legitimatize Bitcoin significantly to its enemies and after Bitcoin wins, to themselves.
+
+Open in app
+
+
+
+
+
+Open in app
+
+
+
+
+
+Bitcoin: A Declaration of Monetary Independence
+
+Jimmy Song
+
+Jimmy Song
+
+
+
+Jul 3, 2020·8 min read
+
+
+
+
+
+
+
+
+
+The system is rigged. We all can see it in the opulent residences of the rich in San Francisco which lie blocks away from the squalid tents of the homeless. We can feel it in the way that certain people and businesses do little to better civilization yet make ludicrous amounts of money. We can hear it in the frivolity with which certain people spend money and the morbid gravity of those whose souls are crushed by debt.
+
+
+
+That the system favors certain people and screws over others is obvious even to a five-year-old. Why the system is so unfair is not at all obvious and is the source of much political confusion. People on the left think the rich get there through exploiting the poor. People on the right think the poor get there because they’re lazy. What’s the truth? What’s going on and why is the system rigged?
+
+Fiat Money is Unfair
+
+At the root of the unfairness of the current system is money. This is not the first place people look, but it is where every sound analysis leads. The system is unfair because the money itself is unfair.
+
+
+
+To see how this is the case, let’s start with what we’ve been observing the past 4 months. Governments all around the world have spent with complete abandon. But where does that money come from? Who’s paying for all the stimuli and bailouts and grants? The amounts in these emergency measures to revive the economy in the past few months are absolutely staggering. They are well in excess of revenue these governments collect in taxes.
+
+There are two possible answers. The money is coming from no one in particular and not paid for by anyone (something for nothing), or the cost is hidden and paid by people, just not obviously (something for something).
+
+How Fiat Money Works
+
+Is it really so simple? Can we help everyone who needs help just by printing more money without bad effects? Can we get something for nothing?
+
+
+
+If it really is that simple, this leaves us with the obvious question. If the government can just print money to pay for everything, why are we paying taxes at all? If the Fed/US government can spend $6 trillion to revive the economy and it doesn’t have any other effect, why not spend $60 trillion or $300 trillion (enough to make every person in the US a millionaire)?
+
+The fact that this hasn’t been done (and just common sense) is evidence that we can’t get something for nothing. This is a convenient lie to give the people the illusion of getting government services without cost.
+
+Despite what we may want to believe, we can’t get something for nothing. Such claims that legislators promote are the economic equivalent of perpetual motion machines: that is, impossible.
+
+The spending is paid for via less purchasing power or what we call inflation. So why haven’t we seen that much inflation? Hasn’t the Consumer Price Index (CPI) been 2–3% for a long time now? For USD, at least, there’s something called the “exorbitant privilege” which is the result of a particular historical event, namely the result of WWII.
+
+
+
+The Dollar Hegemony
+
+The dollar privilege, or dollar hegemony, is propped up through its position in international trade. Oil, in particular, has to be bought with dollars, so every company and every country has to keep some reserve in dollars (or get loans in dollars) if it wants to buy oil. Because of the dollar’s usefulness in buying oil, international trade tends to be settled in the dollar as well. As a result, the dollar has far more liquidity than any other currency. So in a liquidity crisis like we have now, capital flows toward the dollar, meaning that there’s higher demand for USD.
+
+The demand for the dollar offsets the dollar inflation or expansion. To be more precise, it’s actually the other way around. The Fed is expanding the supply of USD to offset the crazy dollar demand around the world. This, in turn, means that other currencies depreciate relative to the dollar. In other words, USD inflation gets exported. Though the US does produce many goods that get exported around the world, the exorbitant privilege is in being able to export the dollar. The trade deficit is essentially goods that enter the US for newly printed money.
+
+
+
+Monetary expansion (a.k.a. quantitative easing, credit facilities, loan programs, money printing) is an obscured tax. We cannot get something for nothing and $6 trillion in monetary expansion will have the effect of taking stored value from all owners of the money, which is an implicit tax. What’s more, since a lot of the dollar holders are not in the US, this effectively taxes people around the world who have no say at all in US government, let alone the Fed’s monetary policy! All those people, companies and countries that hold the dollar are getting taxed without representation.
+
+The morality of monetary expansion is explained by a 14th century Bishop, Nicole Oresme:
+
+For every change of money…involves forgery and deceit, and cannot be the right of the prince, as has previously been shown. Therefore, from the moment when the prince unjustly usurps this essentially unjust privilege, it is impossible that he can justly take profit from it. Besides, the amount of the prince’s profit is necessarily that of the community’s loss. But whatever loss the prince inflicts on the community is injustice and the act of a tyrant and not of a king, as Aristotle says. And if he should tell the tyrants’ usual lie, that he applies that profit to the public advantage, he must not be believed, because he might as well take my coat and say he needed it for the public service.
+
+The euphemisms for fiat money printing are legion: “loans,” “debt,” “bond issue” or some other financial instrument that implies being paid back. This is to give the illusion that the value is being taken, not from the holders of the dollar, but from some specific entity that lent it the money and that the debt will be paid back in some way later. This is the ethical equivalent of seizing my coat and saying it’ll be given back later because the government has need of it. At the very least, I should be compensated for the fact that my coat is being used by the government.
+
+
+
+And indeed, there is compensation being paid by the government, but it doesn’t go to you or me, it goes to the Central Bank, or more precisely, the private and undisclosed shareholders of the member banks of the Federal Reserve in the form of interest. So in a way, someone else gets compensated to borrow your goods! Imagine if the government seized your car for 6 months and compensates some banker you’ve never met that doesn’t have anything to do with your car. That’s what’s happening when the Fed expands the money supply.
+
+As Oresme says above, monetary expansion is an unjust seizure of wealth. The open and honest way for any government to pay for its services would be to explicitly tax the citizens. People generally don’t like taxes so will not consent without a really good reason. This is how governments were held accountable in hard money societies, as government couldn’t tax too much without a revolt.
+
+
+
+Yet the government can and does tax its citizens, just not explicitly or openly. Instead it does so covertly and implicitly through inflation. By this mechanism, it satisfies the right by having low explicit taxes and the left by providing lots of government services. Deficit spending/monetary expansion is a loophole that every government has exploited to tax its citizens for the last 50–100 years.
+
+How Bitcoin Is Different
+
+Bitcoin has two unique qualities which make it especially fair. First, it is near impossible to counterfeit. Anyone running a full node can check quite easily whether the bitcoins they received are genuine (spoiler: BCH is not bitcoin nor is BSV). That is, Bitcoin is easily recognizable and cannot be faked.
+
+Second, it is impossible to inflate Bitcoin beyond the supply schedule created at its inception. The entire community of full node operators and bitcoin holders would have to agree to make that happen (spoiler: it won’t). That is, it’s a hard money with a hard cap.
+
+
+
+These are specifically the two properties that make implicit/covert taxation so difficult and incentivizes an open and honest government. No longer can the sovereign just print more money to fund its latest program, it would either have to save revenue from prior years, cut some other program or tax the populace to pay for it. The loophole of deficit spending, which is really just printing more money and imposing an implicit tax on all dollar holders, is closed and spending has to be aligned with revenue.
+
+Oresme’s insight that money belongs to everyone that owns it reveals a fundamental truth: monetary expansion violates the property rights of everyone who holds the money. Bitcoin is the first money to enforce the ideal that the money belongs to everyone who holds it, and not some authority that claims it with threats of violence.
+
+Bitcoin is the first money that makes the monetary abuse by authorities impossible. Bitcoin is impossible to inflate without consent from everyone. On a Bitcoin Standard, the path that governments have to take in order to raise revenue is to get explicit consent for taxes instead of implicit theft through inflation.
+
+Conclusion
+
+The monetary system that we’re under is a tyranny. The Fed is an independent organization and is not accountable to voters. Furthermore, the dollar standard means that inflation gets exported to people outside the US, who have even less say. The dollar hegemony is an unjust system where the wealth of the world is controlled by an organization that’s able to tax without anyone’s consent.
+
+The rallying cry of 1776 was “no taxation without representation.” The entire world is being taxed by an organization in which only the very powerful and rich have representation. It’s time to end the Fed.
+
+
+
+This isn’t a new sentiment. Ron Paul wrote a book about it over a decade ago. But now, we can do something about it outside of our broken political system. We can buy bitcoin and declare monetary independence. Real justice means economic justice. Fairness means a system that isn’t rigged. Bitcoin propels meritocracies. Bitcoin expunges systemic unfairness.
+
+The system is rigged. Bitcoin fixes this.
+
+Debunking a Deceitful BCH Claim
+Jimmy Song
+Jimmy Song
+
+Jan 24, 2020·7 min read
+
+
+
+
+Jiang Zuouer of BTC.top posted a rather…​ interesting analysis​ of their plan to fund BCH development​ with 12.5% of the BCH coinbase award for 6 months starting in May. If you haven’t seen the proposal, the idea is for the miners to form a cartel where they will orphan any blocks that don’t give the developer subsidy, meaning they have some assurance that they have at least 51% (more likely in the 70% range) to make good on this threat. The game theory on that is interesting, as BCH has a 10 block rule that will make any orphaning with​ less than 60%​ of the total BCH hash power pretty risky, but that’s a post for another time.
+
+What I want to focus on in this article is Jiang Zhuoer’s claim that BTC miners are actually partially paying for this plan.
+
+The Claim
+Let’s break down the claim step-by-step.
+
+Because of the hash ratio between BTC and BCH, and the difficulty adjustments that maintain an equilibrium, it is the entire set of SHA-256 mining (including BTC mining) that bears the cost under this plan.
+
+The hash ratio between BTC and BCH has a theoretical equilibrium point based on price. We’ll use round numbers here for the sake of simplicity. If BTC is worth $9000 and BCH $1000, given the same block reward, 90% of all available SHA256 hash rate goes toward BTC and 10% to BCH as that’s the game-theoretical optimum. If miners move from BCH to BTC, they lose money in opportunity cost, same for the reverse, provided the price stays the same. Whenever price changes, (say BTC is worth $9400 and BCH $600), BCH miners are making less money and BTC miners are making more, causing BCH miners to move from BCH to BTC. The hash rate ratios quickly go to 94% for BTC and 6% for BCH as about 4% of all miners are incentivized to move to BTC.
+
+
+
+The 12.5% tax is similar to a price change. A miner that was making $1000/day on BCH now starts making $875/day on BCH because of the dev tax. This means that the hashing power of BCH will lessen by 12.5% given that everything else stays the same.
+
+Thus far, we have no reason to believe that BCH won’t be paying the cost of the 12.5% tax. In fact, BTC will get more hashing power and a more secure network at the cost of BCH hashing power and less security on their network!
+
+Assuming a Static Global Hash Rate
+This is counterintuitive: With 12.5% of the coinbase being donated, then on first glance, it would appear that BCH miners simply give up 12.5% of their rewards and would then lose 12.5% of their hash as well.However, after difficulty adjusts on BTC, it is a different story.
+
+The difficulty adjustment does put some difficulty into the calculation. BCH’s difficulty adjustment algorithm adjusts pretty quickly to keep the blocks at 10 minutes. This was done because they experienced a much lower percentage of the total hash rate and there were many 12-hour periods during their first difficulty adjustment algorithm era where they found few, if any, blocks.
+
+
+
+What the difficulty adjustment algorithm does is make each block easier to find so that the blocks continue being produced at 10 minute intervals, regardless of hash rate. The algorithm has some serious security vulnerabilities, but that’s a post for another day.
+
+Assume round numbers for illustration: BTC is 97% hash and BCH 3%.If BCH gives up 12.5% of its reward, that 3% goes to about 2.6%, and BTC would go to 97.4%.
+
+0.375% of the total SHA-256 rewards are being pulled out of the entire system, but this cost will be split between BTC and BCH in the same ratio as the hash (97:3).The BCH hashrate will be diminished by 12.5%, but BTC mining will bear 97% of the cost of the diminished profitability, because there will be more hash competing for the same BTC rewards.
+
+So here’s the meat of the argument. Essentially, Jiang is arguing here that BTC miners are actually bearing the brunt of the cost because more hashing power is needed per block after BTC’s difficulty adjusts to reflect the new miners coming in from BCH.
+
+First Order Effects
+To illustrate the deceitfulness of this argument, let us use an extreme example. Say 90% of the reward is going to the BCH developers. If BTC/BCH hashing power is split 97%/3% before the reward goes into play, 90% of the miners on BCH immediately leave after the reward goes into play. The hashing power split becomes 99.7%/0.3%. The difficulty on BCH quickly adjusts to allow 0.3% of all SHA256 hashing power to mine a block in 10 minutes. The hashing power on BTC eventually adjusts to allow 99.7% of the total SHA256 hashing power to mine a block in 10 minutes.
+
+
+
+So what’s changed here? 99.7% of mining has to compete for the same rewards as 97% from before, so there’s roughly 3% less reward on a per-hash basis. Same for the 0.3% in BCH, as Jiang has pointed out. As far as the reward analysis goes, this is true. Seems like a free lunch paid for by BTC, as Jiang is asserting.
+
+Second and Third-order Effects
+But there are further, second-order effects here. 3% more miners on the BTC network mean that the profitability has changed and the miners at the margin will now no longer make profit. If all costs and prices stay the same, the miners whose profit margin is less than 3% of the reward will simply stop running their miners. In other words, supply of hashing power will react to the reduced demand.
+
+
+
+Depending on how many miners are operating at the margins, the amount of hashing power dropping out may be more than 3% or less than 3%. If it’s more than 3%, the difficulty will adjust again and equalize at a level that’s actually more profitable than before the whole dev tax began to the miners on BTC. If it’s less than 3%, the difficulty will adjust and equalize at a level that’s less profitable than before the whole dev tax began to the miners on BTC, but more profitable than the simplistic situation Jiang outlined. Of course, making it 3% easier will bring back those marginal miners as a third-order effect, but this is why claims like this are ridiculous. You can’t examine just the first order effects and claim the cost is being paid only by those.
+
+First-order Security Costs
+Furthermore, BCH is paying out the same 6.25 BTC per block for 87.5% of the security as before the dev tax! The BCH network is essentially paying their miners the same amount for less work so they can pay their developers. And who pays for the BCH network? Well, it’s really the holders of BCH. They are the ones whose percentage of BCH is being reduced by the inflation. In a proof-of-work system, the inflation and fees pay for security. And since the fees on BCH are negligible, the cost of the security goes up proportionate to the amount of the tax. The holders of BCH are getting less security for the same dilution.
+
+
+
+Consequently, exchanges and merchants will need to increase the number of confirmations needed by 14% (1/0.875) to get the same level of security against double-spending attacks, slowing everything down.
+
+In a coin supposedly focused on transacting frequently, this is a strange trade-off to be making.
+
+Conclusion
+The cost to BCH is not just “BTC is going to pay for 97% of it”. As I’ve shown there’s a significant amount of costs in security and second order effects. Jiang’s argument is the equivalent of saying if Canada raises taxes, it’s actually the US that pays for most of it. With the logic being that anyone who leaves Canada will go to the US and cause more competition in the US labor markets and that will allow Canadians staying to make that money back. This is theoretically true if examining cherry-picked first-order effects, but those effects are only a small part of all the consequences.
+
+
+
+What BCH is doing is removing a part of the market for SHA256 hash power, which is, of course their prerogative to do. Essentially, they are lowering the demand for all SHA256 power with the dev tax. By this cherry-picked logic, changing the proof-of-work algorithm or killing proof-of-work altogether would be even better since then SHA256 power has to all go to other places, making BTC mining less profitable at least on a cherry-picked, first-order basis.
+
+The shortsightedness of this policy is truly something to behold. What are they going to do after 6 months if this tax policy is successful? Continue it? What happens after the next halving if the price hasn’t changed? How about the halving after that and the halving after that? Long term, the block reward becomes less than the dev subsidy meaning something will have to give. The BCH developers are obviously going to want to continue the subsidy. Do the miners screw over the developers by ending the subsidy? Or is BCH just going to change their inflation schedule to fund both the miners and developers?
+
+This policy has the potential for a whole lot of drama and I, for one, will be getting some popcorn.
+
+Open in app
+
+
+
+Open in app
+Why Satoshi (probably) didn’t move some coins from 2009
+Jimmy Song
+Jimmy Song
+
+May 20, 2020·5 min read
+
+
+
+
+On block 631058 was mined​ a transaction​ which spent an output from February of 2009, that is a month after the Bitcoin network went live. This has caused a bit of a price swing, not to mention, a lot of speculation, about whether this is Satoshi Nakamoto moving these coins or not.
+
+In this article, I’m going to lay out the case for why it probably wasn’t Satoshi and the bit of digital forensics we can use to figure this out.
+
+What Happened
+On May 20, 2020, a​ transaction with the id of​ cb1440c787d8a46977886405a34da89939e1b04907f567bf182ef27ce53a8d71​ was broadcast onto the Bitcoin network and included in block 631058. The transaction’s input was from block​ 3654, specifically the​ coinbase transaction, which was mined on or around February 9, 2009. As the genesis block was created after January 3, 2009, this is a mere 37 days after the Bitcoin network’s inception.
+
+There weren’t that many people mining on the network (or even knowing what it was), so the speculation is that this output may belong to Satoshi Nakamoto. Given that a private key is required to unlock the output, the fact that this output was spent suggests that the spender has access to the private key. If this is Satoshi, this would suggest that there may be a lot more Bitcoins to be dumped. The price of Bitcoin dropped around 5% as of this writing, perhaps based on that speculation.
+
+Bitcoin Back in 2009
+February 2009 is about as far back as we can go in Bitcoin. At the time, Bitcoin was known to very few people, mostly people from the cypherpunk mailing list and most were mining because they thought it was an interesting experiment. Back then, there weren’t many transactions on the network other than Coinbase transactions, as people weren’t sending Bitcoins around. One notable exception is in block 170, where​ Satoshi Nakamoto sent Hal Finney 10 bitcoins.
+
+So for one thing, we know that Satoshi Nakamoto mined block 9, at least, and may have mined more. That said, there were other people mining on the network, not the least of which was Hal Finney:
+
+
+
+Because Bitcoin was so new and there was only one choice of software, everyone running the Bitcoin software at the time was mining.
+
+What We Can Infer
+Because everyone was mining and there were few, if any, transactions that weren’t coinbase transactions back then, we can try to piece together some information based on the code back in Bitcoin v0.1.
+
+Back in v0.1, there was a specific function in main.cpp that created proof-of-work. Of course, it was very easy to find proof-of-work back then by today’s standards, but it still required a good deal of CPU power to find. We can see the code that creates the coinbase transaction​ here.
+
+The key piece of information we can gather in the coinbase transaction, besides the output, is something called the​ extra nonce:
+
+
+
+You can see in line 2190 that bnExtraNonce gets set to 0. Further in line 2212, the same variable increments in the while loop for generating coins (aka mining). Lastly, also in line 2212, the bnExtraNonce is added to the the coinbase transaction’s scriptSig via the “<<” operator. This is where we can use some forensics as this variable gets set to 0 and increments as long as the program is running. If the program restarts, this gets reset to 0. Thus, the longer the bitcoin software was running, the higher this number would be and further, this number would show up in the coinbase transaction’s scriptSig field, which we can examine on the blockchain.
+
+This is where​ Sergio Lerner’s examination of the early blocks​ have led to his labeling of certain coinbase transactions as having been from “Patoshi”. The coins in the graph are green if spent and blue if unspent with the y-axis being the extra nonce value and you can see the large blue strands:
+
+
+
+These are what are suspected to be Satoshi’s coins as the extra nonce value increases when a block is mined. These are also pretty long running processes that seem to get restarted every week or so. To be fair, we don’t know if these are specifically Satoshi’s coins, except something like block #9, but there’s decent forensic evidence given how the blue strands line up (when one ends, another one begins soon after), that these coinbase outputs have a good argument of being Satoshi’s.
+
+The Block in Question
+Looking at block 3654, and specifically,​ the coinbase transaction, we can look at the scriptSig to find the extra nonce value:
+
+
+
+The scriptSig has a 4-byte bits number (0xffff001d, which is the proof-of-work threshold) and then the extra nonce, which is 0xdd01. This number is in little-endian hexadecimal, which works out to be 477 in decimal.
+
+Compare this with the nearest blue dots from one of the strands, blocks right before and after this block, which are blocks 3653 and 3655. They have extra nonces of 2367 and 2372 respectively.
+
+Conclusion
+It’s possible, of course, that Satoshi was running Bitcoin on multiple computers and that this is from another computer than the blue strands for blocks 3653 and 3655, but given the clear blue pattern of all the coins that haven’t been spent, it seems likely that this isn’t the same person that owns the million or so Bitcoins.
+
+Why Exchanges Delist Coins
+
+Jimmy Song
+
+Jimmy Song
+
+
+
+Dec 20, 2019·8 min read
+
+
+
+
+
+
+
+
+
+If you haven’t heard yet, CoinFloor announced that the exchange will be Bitcoin-only come January 3, 2020. That is, they’ll delist BCH and ETH and concentrate only on BTC. Similarly BitGo is no longer supporting BSV given their p2sh rollback coming in a month. This is welcome news, not the least to the poor engineers in charge of having to keep the costly nodes upgraded and running.
+
+
+
+This is the beginning of a trend and in this article, I’m going to show all that goes into supporting an altcoin and why an exchange might be delisting certain tokens.
+
+The Economics of Exchange Listing
+
+Listing coins on exchanges has a sordid history, going as far back as 2013 when btc-e allegedly listed Novacoin in exchange for a significant portion of the premine. Since then, there have really only been 3 ways to get a coin listed on an exchange:
+
+Demand by the customers
+
+Bribe by the token’s central committee (usually the founder or foundation)
+
+Hard fork demanded by customers
+
+The first is where the bulk of the long-term money is made for an exchange. The commissions on trades are where most of the money comes from and customer demand is a good proxy for the revenue to be made from listing the token.
+
+
+
+Bribery is generally a short-term move as demand, if there at all, tends to not last. Still, the profits can be substantial short-term, especially during bull runs, as the frenzy tends to create crazy price action on the low-liquidity coins, drawing in traders.
+
+Finally, hard forks can create coins that customers want their share of. BCH and ETC were two coins that essentially “forced” exchanges to at least give their customers their amounts due through what was essentially a back-door airdrop. These are, again, short-term moves as after the dump of the coins by people uninterested in holding them, the volume of trades tends to drop off substantially.
+
+Revenue
+
+Further considerations for an exchange on the revenue front are that they may be deceived into listing a token through something like an Exchange Sybil attack. Verifying that there’s real customer demand can be difficult and requires a lot of due diligence, which a lot of exchanges simply don’t do. The trading volume after listing is often disappointing for that reason.
+
+In addition, trading volume on a newly listed token may also take trading volume away from other tokens, essentially robbing Peter to pay Paul. Finally, liquidity on a per-token basis tends to go down as more tokens are listed as there’s only so much money that the customers have. This enlarges spreads, which reduce incentives for trading and ultimately hurt revenue. This is what you could call liquidity dilution.
+
+
+
+In sum, long-term, the revenue that an exchange can make off of a token based on hard forks/bribery are generally not worth it. Customer demand, however, tends to be better, though even that can be faked or taper off through too many listings.
+
+Expenses
+
+The costs for an exchange for listing a token varies. Depending on the nature of the coin, it may be cheap or expensive. It’s known, for example, that keeping an Ethereum node up is very expensive, whereas keeping a Bitcoin node up is not. Furthermore, upgrading becomes a real issue when a coin hard forks. Hard forks require downtime and maintenance which have continual costs. BCH and XMR have hard forks every 6 months, ETH at least a couple times a year (though the upcoming one in two weeks was unscheduled), and without upgrading, there’s no way for an exchange to verify transactions and downtimes create bad user experiences. BTC on the other hand, has never had a hard fork.
+
+Thus, it’s cheap to maintain BTC support whereas the maintenance for a coin like ETH is expensive. Ultimately, the complexity of the system upgrades determine the costs to maintain a coin and at a certain point, it may simply be uneconomical or even impossible to continue support, as we’ve seen with BitGo and BSV.
+
+Risks for an Exchange
+
+If the revenues of listing a token outweigh the costs of maintaining a token, it would seem obvious to list it, but that’s a short-sighted view. There are numerous security risks associated with listing a token that also have to be factored in:
+
+Exchange hacking risk
+
+Block reorganization risk
+
+Replay protection risk
+
+Regulatory risk
+
+Exchange Hacking
+
+The history of exchanges getting hacked is legion, and the costs tend to be severe. The hacks can be internal (by an employee or owner) or external (by an outside party) or some combination. As listing a coin adds to the attack surface of any exchange, this has to be a major part of the calculation.
+
+
+
+Perhaps the most famous of these cases is the story of Cryptsy, who in 2014 was allegedly hacked by listing a coin whose node software had malware. The creators of the coin apparently used the coin’s full node software to get access to the Cryptsy systems and then proceeded to drain the exchange of 13,000 BTC and 30,000 LTC.
+
+A security audit of each token’s source code is necessary to reduce this risk, but given how much code has to be examined and given that sometimes the code isn’t even available to be examined, this is not a common practice. Furthermore, any upgrades to the software should also require separate security audits in case any malicious code was added. Frequent forced software upgrades, or hard forks, make good security practices even more costly.
+
+Block Reorganization Risk
+
+Another factor for an exchange from a security perspective is the block reorganization risk. That is, a coin may be attacked directly and attackers may use the exchange as a way to cash out. For example, someone may deposit a large amount of a low hash proof-of-work token to the exchange, trade them for something more liquid and withdraw. Afterwards, the token ledger can itself be attacked and reorganized as to cancel the depositing transaction, essentially double-spending the coins. This would obviously be very bad for the exchange, as they would be out a lot of money.
+
+
+
+Though it has not been tried yet, it’s also possible that a token’s controllers could change their ledger through a hard fork to screw over an exchange. A hard fork completely resets the rules, so it is at least possible in principle to drain an exchange solely through ledger manipulation in much the same way that ETH did with the DAO incident, but with the exchange as the “thief”.
+
+In other words, there’s a risk of centralized controllers of these tokens stealing from the exchange through a ledger reset. This may not seem so likely now, but if an exchange is seen as a bad actor, that may be enough justification for a token’s controllers to simply change the ledger to the exchange’s detriment.
+
+Replay Protection Risk
+
+Another risk is the possibility that a hard fork of a given coin might create a new coin against the expectations of the community. ETH split to ETH and ETC in exactly this way back in 2016. Coinbase, for example, did not expect ETC to survive and thus sent out transactions which did not have replay protection and lost a lot of ETC which they then had to buy to compensate their customers.
+
+Regulatory Risk
+
+Finally, there are regulatory risks associated with a particular token. AML/KYC laws may make listing a privacy token especially hard, for example. Other regulatory concerns might be if a token is considered a security and the burden that might come with qualifying investors. As each jurisdiction has different regulatory requirements, risks here include not only laws that currently exist, but also laws that might come and the lobbying that might be necessary to prevent unfavorable ones.
+
+The Ideal Process For Listing Tokens
+
+The ideal process should require first, a strong customer demand. That is, not just short-term demand, but long-term demand. There is generally a ton of interest in a token right after launch, but that generally tends to taper off except in extraordinary cases.
+
+Second, the code for the token should be audited and then compiled and run in an isolated, secure environment. Any sort of upgrade should be run through the same process.
+
+Third, the number of confirmations should be high or otherwise, there should be guarantees from the token founders for any losses due to chain reorganizations or ledger resets.
+
+Fourth, the coin should clear any legal regulations that are currently in place and any regulations that are likely in the near future. This is probably one that exchanges are the best at, as legal expertise tends to be cheaper and easier to get than security expertise regarding the token’s software.
+
+Conclusion
+
+Given the above, it’s obvious that there are not enough security audits going on at exchanges. Otherwise, the Ethereum bug from the hard fork from last week would have been caught by anyone competent. Instead, it looks like exchanges are blindly running whatever software that the Ethereum Foundation tells them to run, or worse, just relying on Infura.
+
+
+
+What this means is that very few exchanges are responsibly listing coins and that there should be a lot more delistings as security incidents become more frequent and trading volumes lower. The exchanges that are hoping to avoid large financial losses without proper security audits will likely learn the hard way that hope and pray is not a great security strategy.
+
+What CoinFloor has done is not isolated. There have been hundreds of coin delistings in the past year, including BSV, Digibyte and many others. The cost both in terms of maintenance and risk are simply not worth it at a certain point if an exchange wants to survive. Given that trading volumes are dropping and the increasing risks of each separate token, we should expect not only to see more delistings, but initial listings themselves to be less frequent given all the risks and costs for new token listings.
+
+Thanks to Michael Flaxman.​
+
+Over the past couple of weeks, I’ve gone through the Economics 11: Principles of Economics course on saifedean.com. In this article, I’m going to review the class, what I think about it and who I think it’s good for.
+
+
+
+The Austrian Method
+
+One of the things that has always attracted me to Austrian economics is that everything is logically deducible and the arguments are very clearly laid out where other schools of economic thought hand wave to various conclusions.
+
+That said, one of the frustrating things about reading Austrian economics books is that they do seem to spend a lot of time on technical objections that are confusing for a new student and lay things out in a way that require a lot of rigor. That is, they’re not exactly learning-friendly. It’s not easy, for example, to get through Menger or Mises or even Rothbard without feeling like there are entire parts that you missed.
+
+Saifdean Ammous’s Approach
+
+The strength of the offering that Saifedean has put together is that the course is very much focused on helping you learn. As he brings up, a lot of the books like Human Action or Principles of Economics are meant for academics and for people that are looking to build off of it. What I found refreshing about Saifedean’s course was that it was very much geared toward giving me the principles by which to think about various economics topics.
+
+There is, for example, a whole lecture just about labor and the scarcity of human time. This is an obvious fact, but the deductions that we can make from that fact can help us understand phenomena like why predictions about certain natural resources running out have nearly always been wrong.
+
+It’s a much more satisfying way to learn the material as it’s presented in a much more digestible way.
+
+Passionate Stories and More
+
+If you’ve been paying attention to Saifedean Ammous for a while, you are probably aware of the debates and talks he’s done. He’s a brutal assassin in these debates and his talks can be a bit controversial. You may think that his style may detract from the learning experience, but I found it to be the opposite. He has a clear passion for the subject that he’s teaching which were very easy for me to absorb.
+
+At one point, he gives a very rational and thorough critique of minimum wage. The same argument could have been given in a stand-offish calculating manner, but his obvious disdain for how illogical minimum wage is and how unjust it is to the very people it purports to help comes through and aids in remembering the argument.
+
+Conclusion
+
+All this is to say that I really enjoyed the course. If there’s any criticism of it, I wish there was more interactivity and discussion around economic phenomena for practicing this newfound knowledge. That said, there are some forums to encourage student discussion which will hopefully build out over time. I’m definitely going to be buying more courses myself.
+
+If you are looking to understand economics in a much clearer way and with a better deductive basis, this course is definitely for you. The course is an excellent way to learn the Austrian economics concepts and will help you understand Bitcoin as an economic phenomenon much better.
